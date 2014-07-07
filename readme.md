@@ -22,9 +22,9 @@ Installation
 <script src="{$basePath}/js/jquery-ui-timepicker-addon.js"></script>
 ```
 
-- Download [DateTimeControl.php](src/DateTimeControl.php), let it load by autoloading
+- Download [DateTimeControl.php](https://raw.githubusercontent.com/VladaHejda/DateTimeControl/master/src/DateTimeControl.php), let it load by autoloading
 
-- Download [datetimepicker.js](src/datetimepicker.js) and link it
+- Download [datetimepicker.js](https://raw.githubusercontent.com/VladaHejda/DateTimeControl/master/src/datetimepicker.js) and link it
 ```html
 <script src="{$basePath}/js/datetimepicker.js"></script>
 ```
