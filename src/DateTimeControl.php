@@ -1,6 +1,6 @@
 <?php
 
-namespace Nais\Components;
+namespace Nette\Components;
 
 use Nette;
 use Nette\Forms\Form;
