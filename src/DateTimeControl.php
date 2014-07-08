@@ -157,7 +157,6 @@ class DateTimeControl extends Nette\Forms\Controls\BaseControl
 
 	/**
 	 * @todo Range rule under condition does not work.
-	 * @todo Range rule does not work in javascript (netteForms.js)
 	 */
 	public function addRule($operation, $message = NULL, $arg = NULL)
 	{
@@ -179,7 +178,7 @@ class DateTimeControl extends Nette\Forms\Controls\BaseControl
 				}
 
 				$this->rangeLimit = array($since, $to);
-				parent::addRule(Form::RANGE, $message, $this->rangeLimit);
+				parent::addRule(':timeRange', $message, $this->rangeLimit);
 				return $this;
 				break;
 
@@ -239,7 +238,7 @@ class DateTimeControl extends Nette\Forms\Controls\BaseControl
 	}
 
 
-	public static function validateRange(Nette\Forms\IControl $control, $range)
+	public static function validateTimeRange(Nette\Forms\IControl $control, $range)
 	{
 		$value = $control->getValue();
 		return empty($value) || Nette\Utils\Validators::isInRange($value, $range);
