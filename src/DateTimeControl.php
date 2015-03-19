@@ -178,7 +178,7 @@ class DateTimeControl extends Nette\Forms\Controls\BaseControl
 				}
 
 				$this->rangeLimit = array($since, $to);
-				parent::addRule(':timeRange', $message, $this->rangeLimit);
+				parent::addRule(get_class() . '::validateTimeRange', $message, $this->rangeLimit);
 				return $this;
 				break;
 
