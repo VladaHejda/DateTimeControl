@@ -448,7 +448,7 @@ class DateTimeControl extends Nette\Forms\Controls\BaseControl
 			$hour = $minute = $second = 0;
 		}
 
-		$date = new Nette\DateTime;
+		$date = new Nette\Utils\DateTime;
 		return $date->setDate($year, $month, $day)
 			->setTime($hour, $minute, $second);
 	}
